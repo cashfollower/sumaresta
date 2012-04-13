@@ -24,6 +24,7 @@ gem 'jquery-rails'
 
 gem "factory_girl_rails", :group => [:test, :development]
 gem "minitest-rails", :group => [:test, :development]
+gem "devise"
 
 group :test do
   gem "minitest"
