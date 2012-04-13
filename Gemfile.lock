@@ -42,6 +42,9 @@ GEM
     capybara-webkit (0.11.0)
       capybara (>= 1.0.0, < 1.2)
       json
+    capybara_minitest_spec (0.2.1.1)
+      capybara
+      minitest (~> 2.0)
     childprocess (0.3.1)
       ffi (~> 1.0.6)
     coffee-rails (3.2.2)
@@ -160,6 +163,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   capybara-webkit
+  capybara_minitest_spec
   coffee-rails (~> 3.2.1)
   debugger
   factory_girl
