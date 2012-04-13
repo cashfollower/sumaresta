@@ -22,6 +22,9 @@ end
 
 gem 'jquery-rails'
 
+gem "factory_girl_rails", :group => [:test, :development]
+gem "minitest-rails", :group => [:test, :development]
+
 group :test do
   gem "minitest"
   gem "capybara"
@@ -29,9 +32,6 @@ group :test do
   gem "factory_girl"
   gem "turn"
 end
-
-gem "factory_girl_rails", :group => [:test, :development]
-gem "minitest-rails", :group => [:test, :development]
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
