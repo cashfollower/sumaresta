@@ -42,9 +42,6 @@ GEM
       rack-test (>= 0.5.4)
       selenium-webdriver (~> 2.0)
       xpath (~> 0.1.4)
-    capybara-webkit (0.11.0)
-      capybara (>= 1.0.0, < 1.2)
-      json
     capybara_minitest_spec (0.2.1.1)
       capybara
       minitest (~> 2.0)
@@ -229,7 +226,6 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   capybara
-  capybara-webkit
   capybara_minitest_spec
   coffee-rails (~> 3.2.1)
   debugger
