@@ -2,4 +2,14 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  footer:
+    mailing:
+      title: "MAILING LIST"
+  layouts:
+    home:
+      log_in: "Log in"
+      get_started: "Get started"
+      already_registered: "Already have a cashfollower account? %{link}"
+      sign_up: "Sign up"
+      title_1: "Use Cashfollower for free. It's free and always will be."
+      title_2: "You will be runing in less than a minute."
