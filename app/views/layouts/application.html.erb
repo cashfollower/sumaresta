@@ -7,11 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<% if user_signed_in? %>
+  You are logged in! <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+<% else %>
+  You are not logged in! <%=  link_to "Login", new_user_session_path %>
+<% end %>
   
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
 <%= yield %>
+
+<%#= link_to "Sign in with Google", user_omniauth_authorize_path(:google) %>
 
 </body>
 </html>

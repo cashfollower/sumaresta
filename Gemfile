@@ -20,11 +20,19 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem "thin", :group => [:development]
+
 gem 'jquery-rails'
 
 gem "factory_girl_rails", :group => [:test, :development]
 gem "minitest-rails", :group => [:test, :development]
+
+#authentication
 gem "devise"
+gem "omniauth"
+gem "omniauth-google"
+gem "omniauth-openid"
+gem "omniauth-github"
 
 group :test do
   gem "minitest"

@@ -3,7 +3,16 @@ Sumaresta::Application.routes.draw do
   # first created -> highest priority.
   
   root :to => "home#index"
-  devise_for :users
+  
+  devise_for :users, :controllers => {
+    sessions: "users/sessions",
+    registrations: "users/registrations",
+    passwords: "users/passwords",
+    unlocks: "users/unlocks",
+    confirmations: "users/confirmations",
+    mailer: "users/mailer",
+    omniauth_callbacks: "users/omniauth_callbacks"
+  }
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
