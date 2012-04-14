@@ -18,11 +18,12 @@ group :assets do
   gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'twitter-bootstrap-rails'
 end
 
 gem "thin", :group => [:development]
 
-gem 'jquery-rails'
+
 
 gem "factory_girl_rails", :group => [:test, :development]
 gem "minitest-rails", :group => [:test, :development]
@@ -33,6 +34,11 @@ gem "omniauth"
 gem "omniauth-google"
 gem "omniauth-openid"
 gem "omniauth-github"
+
+#design
+gem "bourbon"
+gem 'jquery-rails'
+gem "simple_form"
 
 group :test do
   gem "minitest"
