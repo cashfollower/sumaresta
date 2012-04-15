@@ -19,23 +19,23 @@
   <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
 </head>
 
-<body id="home">
+<body> 
 
-<!-- Header & Navigation -->
-<header> 
-    <div id="site-title">
-    <h1><%= link_to "cashfollower", root_path, class: "brand" %></h1>
-  
-    <nav>
-      <%= link_to "About", "/path1"  %>
-    </nav>
-  </div>
-  
-</header>
+  <div id="home">
 
-<!-- Form Sign up -->    
-<div class="container sign_up">
-      
+    <!-- Header & Navigation -->
+    <header> 
+      <div id="site-title">
+        <h1><%= link_to "cashfollower", root_path, class: "brand" %></h1>
+  
+        <nav>
+          <%= link_to "About", "/path1"  %>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Form Sign up -->    
+    <div class="container sign_up">
       <div class="content">
           <h1 class="title_1"><%= t ".title_1" %></h1>
           <h2 class="title_2"><%= t ".title_2" %></h2>
@@ -54,33 +54,45 @@
           </div>
           <div class="already_registered">
             <%= raw t(".already_registered", :link => (link_to(t(".log_in"), new_user_session_path))) %>
-          <br/>
-          hello
+          <br/><br/>
+          You also can login with your Facebook, Google or Twitter account
           </div>
           <hr/>
               <%= link_to image_tag("login/google_32.png"), omniauth_authorize_path("user", :google) %><br />
         </form>
         </div>
 
-      </div>
-      
+      </div>  
     </div>
-    
-    <footer>
-      <div class="container">
-        <div class="row-fluid">
-        <div class="span2">&nbsp;</div>
-        <div class="span3">c</div>
-        <div class="span3">b</div>
-        <div class="span3">a</div>
-        </div>
+
+  </div>  
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span2">&nbsp;</div>
+      <div class="span3">
+        <h3>MAILING LIST</h3>
+        <p>Sign up if you would like to receive occasional updates from cashfollower.</p>
       </div>
-    </footer>
+      <div class="span3">
+        <h3>TWITTER</h3>
+        <p>Follow @cashfollower on Twiiter.</p>
+      </div>
+      <div class="span3">
+        Aquí el logo en B&N
+        <p>© 2012 cashfollower<br/>
+        Question? contact@cashfollower.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
     <!-- Javascripts
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
 
-  </body>
+</body>
 </html>
