@@ -2,50 +2,70 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body.home{
-	h1.title_1 {
-		text-align: center;
-	}
+#home {
+
+  header {
+    background: #1e1e1f;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 36px;
+        
+    #site-title {
+      width: 940px;
+      margin: 0 auto;
+      
+      h1 { 
+        text-align: center;
+        padding-top: 20px;
+      }
+    }
+    
+    nav {
+      float: right;
+      padding-top: 50px;
+      
+      a {
+      color: #fff;
+      text-transform:uppercase;     
+      }
+    }
+  }
+  
+  h1.title_1 { text-align: center; }
 	
 	h2.title_2 {
-		text-align: center;
+	  text-align: center;
 		color: #cecece;
 		font-family: Arial;
 		margin-bottom: 50px;
 	}
 	
-	div.container.sign_up {
-		min-height: 100%;
-		height: 100%;
-	}
-	
-	footer {
-		background-color: #dedede;
-		width: 100%;
-		height: 100px;
-	}
+	div.container.sign_up { height: 100px; }
 	
 	form.sign-up {
 		width: 300px;
 		margin-left: auto;
 		margin-right: auto;
 		
-		div.field-container {
-			padding-right: 20px;
-		}
+		div.field-container { padding-right: 20px; }
 		
-		div.submit-container {
-			text-align: center;
-		}
+		div.submit-container { text-align: center; }
 		
 		div.already_registered {
-			text-align: center;
+		  text-align: center;
 			margin: 8px 0 8px 0;
 		}
 		
-		input {
-			width: 100%;
-		}
-		
+		input { width: 100%; }
+	}
+	
+	footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+	  position: fixed;
+		background-color: #f2f2f2;
+		width: 100%;
+		height: 150px;
 	}
 }
