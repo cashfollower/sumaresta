@@ -5,6 +5,7 @@ en:
   footer:
     mailing:
       title: "MAILING LIST"
+      subscribe: "Subscribe"
   layouts:
     home:
       log_in: "Log in"
