@@ -1,3 +1,26 @@
+
+/**
+ * Grid
+ */
+#grid{
+
+    /* Dimensions - same width as your grid with gutters */
+    width: 980px;
+
+    /* Grid (left-aligned)
+    position: absolute;
+    top: 0;
+    left: 0;
+    */
+
+    /* Grid (centered) */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -490px;
+
+}
+
 /**
  * Vertical grid lines
  *
