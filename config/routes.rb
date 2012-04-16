@@ -19,6 +19,7 @@ Sumaresta::Application.routes.draw do
   end
   
   resource :user
+  resources :boards
   
   root :to => "home#index"
 

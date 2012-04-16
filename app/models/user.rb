@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  has_many :user_boards, :dependent => :destroy
+  has_many :boards, :through => :user_boards
+  
   # attr_accessible :title, :body
   attr_accessible :email, :password#, :password_confirmation
   

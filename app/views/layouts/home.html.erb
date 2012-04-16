@@ -19,9 +19,7 @@
   <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
 </head>
 
-<body> 
-
-<%= user_signed_in? %>
+<body class="home"> 
   <div id="home">
     <!-- Header & Navigation -->
     <header> 
@@ -40,6 +38,8 @@
       <div class="content">
           <h1 class="title_1"><%= t ".title_1" %></h1>
           <h2 class="title_2"><%= t ".title_2" %></h2>
+        
+        <%= flash_messages %>
         
         <div class="row">
         <form class="well form-vertical sign-up">
