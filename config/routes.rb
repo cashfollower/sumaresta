@@ -2,7 +2,9 @@ Sumaresta::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
-  root :to => "home#index"
+  authenticated :user do
+    root :to => "users#show"
+  end
   
   devise_for :users, :controllers => {
     sessions: "users/sessions",
@@ -12,7 +14,13 @@ Sumaresta::Application.routes.draw do
     confirmations: "users/confirmations",
     mailer: "users/mailer",
     omniauth_callbacks: "users/omniauth_callbacks"
-  }
+  } do
+    get "users", :to => "users#show", :as => :user_root
+  end
+  
+  resource :user
+  
+  root :to => "home#index"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

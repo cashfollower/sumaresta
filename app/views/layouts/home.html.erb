@@ -21,13 +21,12 @@
 
 <body> 
 
+<%= user_signed_in? %>
   <div id="home">
-
     <!-- Header & Navigation -->
     <header> 
       <div id="site-title">
         <h1><%= link_to image_tag("logos/logo.png"), root_path, class: "brand" %></h1>
-  
         <nav>
           <%= link_to "About", "/path1"  %>
           |
