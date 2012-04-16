@@ -26,10 +26,12 @@
     <!-- Header & Navigation -->
     <header> 
       <div id="site-title">
-        <h1><%= link_to "cashfollower", root_path, class: "brand" %></h1>
+        <h1><%= link_to image_tag("logos/logo.png"), root_path, class: "brand" %></h1>
   
         <nav>
           <%= link_to "About", "/path1"  %>
+          |
+          <%= link_to "Log in", "/path1", class: "blue" %> 
         </nav>
       </div>
     </header>
@@ -53,12 +55,14 @@
             <button type="submit" class="btn btn-success"><%= t ".get_started" %></button>
           </div>
           <div class="already_registered">
-            <%= raw t(".already_registered", :link => (link_to(t(".log_in"), new_user_session_path))) %>
-          <br/><br/>
-          You also can login with your Facebook, Google or Twitter account
+            <p><%= raw t(".already_registered", :link => (link_to(t(".log_in"), new_user_session_path))) %></p>
           </div>
           <hr/>
-              <%= link_to image_tag("login/google_32.png"), omniauth_authorize_path("user", :google) %><br />
+             <p> <%= link_to image_tag("login/facebook_32.png") %>
+              <%= link_to image_tag("login/google_32.png"), omniauth_authorize_path("user", :google) %>
+              <%= link_to image_tag("login/twitter_32.png") %>
+            </p>
+            <small>You also can login with your <br/> Facebook, Google or Twitter account</small>
         </form>
         </div>
 
@@ -76,16 +80,16 @@
         <h3>MAILING LIST</h3>
         <p>Sign up if you would like to receive occasional updates from cashfollower.</p>
         <form class="">
-          <input type="text" value="" placeholder="Email..." class="span3" />
+          <input type="text" value="" placeholder="me@example.com" class="span3" />
           <button type="submit" class="btn btn-inverse"><%= t "footer.mailing.subscribe" %></button>
         </form>
       </div>
       <div class="span3">
         <h3>TWITTER</h3>
-        <p>Follow @cashfollower on Twiiter.</p>
+        <p>Follow <%= link_to "@cashfollower", "http://twitter.com/cashfollower", :target => "_blank" %> on Twiiter.</p>
       </div>
       <div class="span3">
-        Aquí el logo en B&N
+        <%= image_tag("logos/logo_grey_32.png") %>
         <p>© 2012 cashfollower<br/>
         Question? <%= link_to "contact@cashfollower.com", "mailto:contact@cashfollower.com" %></p>
       </div>
