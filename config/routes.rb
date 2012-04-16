@@ -3,7 +3,7 @@ Sumaresta::Application.routes.draw do
   # first created -> highest priority.
   
   authenticated :user do
-    root :to => "users#show"
+    root :to => "user#show"
   end
   
   devise_for :users, :controllers => {
@@ -15,10 +15,10 @@ Sumaresta::Application.routes.draw do
     mailer: "users/mailer",
     omniauth_callbacks: "users/omniauth_callbacks"
   } do
-    get "users", :to => "users#show", :as => :user_root
+    
   end
   
-  resource :user
+  resource :user, :controller => :user
   resources :boards
   
   root :to => "home#index"
