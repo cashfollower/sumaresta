@@ -1,0 +1,3 @@
+<%= simple_form_for :board, :html => {:class => "form-inline", :id => "user_select_board"} do |f| %>
+  <%= f.input :id, :collection => current_user.boards, :label => t(".select_board"), :required => false %>
+<% end %>

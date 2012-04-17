@@ -2,6 +2,9 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  general:
+    success:
+      created: "%{model} created successfully!"
   footer:
     mailing:
       title: "MAILING LIST"
@@ -14,3 +17,6 @@ en:
       sign_up: "Sign up"
       title_1: "Use Cashfollower. It's free and always will be."
       title_2: "You will be runing in less than a minute."
+  user:
+    show:
+      select_board: "Select a board"

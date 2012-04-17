@@ -45,6 +45,8 @@
         <%= flash_messages %>
         <div class="row">
            <div class="span9">
+             <%= content_for?(:header) ? yield(:header) : render(:partial => "layouts/shared/signed_in_header") %>
+             
               <%= yield %>
             </div>
             <div class="span3">
