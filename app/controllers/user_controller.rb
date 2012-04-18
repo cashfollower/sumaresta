@@ -3,6 +3,7 @@ class UserController < ApplicationController
   
   def show
     @boards = current_user.boards
+    redirect_to new_board_path if @boards.empty?
   end
   
 end

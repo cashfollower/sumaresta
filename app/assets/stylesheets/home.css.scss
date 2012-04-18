@@ -78,25 +78,25 @@ body.home {
 
 		input { width: 100%; }
 	}
-	
-	footer {
-		background-color: #f2f2f2;
-	  width: 100%;
-	  height: 200px;
-	  clear: both;
-	  padding-left: 20px;
-	  padding-right: 20px;
+}
 
-	  h3 {
-	    font-size: 1em;
-	    color: #48b7e3;
-	  }
+footer.home {
+	background-color: #f2f2f2;
+  width: 100%;
+  height: 200px;
+  clear: both;
+  padding-left: 20px;
+  padding-right: 20px;
 
-	  .container {
-	    padding-top: 1em;
-	  }
+  h3 {
+    font-size: 1em;
+    color: #48b7e3;
+  }
 
-	}
+  .container {
+    padding-top: 1em;
+  }
+
 }
 
 
