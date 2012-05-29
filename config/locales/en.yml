@@ -15,8 +15,9 @@ en:
       get_started: "Get started"
       already_registered: "Already have a cashfollower account? %{link}"
       sign_up: "Sign up"
-      title_1: "Use Cashfollower for manage your cash. It's free and always will be."
-      title_2: "You will be runing in less than a minute."
+      title_1: "Use Cashfollower for manage your cash."
+      title_2: "It's free and always will be."
+      title_3: "You will be runing in less than a minute."
   user:
     show:
       select_board: "Select a board"

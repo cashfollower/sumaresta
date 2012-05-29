@@ -36,32 +36,24 @@
     <!-- Form Sign up -->    
     <div class="container sign_up">
       <div class="content">
+        <hgroup>
           <h1 class="title_1"><%= t ".title_1" %></h1>
           <h2 class="title_2"><%= t ".title_2" %></h2>
-        
+          <h3 class="title_3"><%= t ".title_3" %></h3>        
+        </hgroup>
         <%= flash_messages %>
         
         <div class="row">
         <form class="well form-vertical sign-up">
           <label><%= t ".log_in"  %></label>
-          <div class="field-container">
-            <input type="text icon-user" class="span3" placeholder="<%= User.human_attribute_name(:email) %>">
-          </div>
-          <div class="field-container">
-            <input type="password" class="span3" placeholder="<%= User.human_attribute_name(:password) %>">
-          </div>
-          <div class="submit-container">
-            <button type="submit" class="btn btn-success"><%= t ".get_started" %></button>
-          </div>
-          <div class="already_registered">
-            <p><%= raw t(".already_registered", :link => (link_to(t(".log_in"), new_user_session_path))) %></p>
-          </div>
-          <hr/>
-             <p> <%= link_to image_tag("login/facebook_32.png") %>
-              <%= link_to image_tag("login/google_32.png"), omniauth_authorize_path("user", :google) %>
-              <%= link_to image_tag("login/twitter_32.png") %>
+            <p>Login with your Facebook, Twitter or Google account.</p>
+             <p class="login_buttons">
+              <%= link_to image_tag("login/button_facebook.png") %>
+              <%= link_to image_tag("login/button_twitter.png") %>
+              <%= link_to image_tag("login/button_google.png"), omniauth_authorize_path("user", :google) %>
             </p>
-            <small>You also can login with your <br/> Facebook, Google or Twitter account</small>
+          <hr/>
+            <small>You also can sign up & login with your <a href="#">email</a>.</small>
         </form>
         </div>
 
@@ -88,9 +80,9 @@
         <p>Follow <%= link_to "@cashfollower", "http://twitter.com/cashfollower", :target => "_blank" %> on Twiiter.</p>
       </div>
       <div class="span3">
-        <%= image_tag("logos/logo_grey_32.png") %>
+        <h3>CONTACT</h3>
         <p>© 2012 cashfollower<br/>
-        Question? <%= link_to "contact@cashfollower.com", "mailto:contact@cashfollower.com" %></p>
+        <i class="icon-exclamation-sign"> </i> <%= link_to "contact@cashfollower.com", "mailto:contact@cashfollower.com" %></p>
       </div>
     </div>
   </div>

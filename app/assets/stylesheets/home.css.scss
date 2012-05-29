@@ -8,7 +8,9 @@ body.home {
 }
 
 #home {
-  padding-bottom:144px; 
+  // padding-bottom:144px; 
+  min-height: 100%;
+  position: relative;
 
   header {
     background: #1e1e1f;
@@ -48,25 +50,41 @@ body.home {
 	
 	h2.title_2 {
 	  text-align: center;
-		color: #cecece;
     margin-top: 0.6em;
     font-size: 1.6666em; // 30 % 18
     line-height: 1.2em; // 18 % 30 
-		margin-bottom: 1.2em;
+		margin-bottom: 0.75em;
+	}
+
+	h3.title_3 {
+	  text-align: center;
+		color: #cecece;
+    margin-top: 0.6em;
+    font-size: 1.3333em; // 24 % 18 
+    line-height: 0.75em; // 18 % 24  
+		margin-top: 1.2em;
+		margin-bottom: 0.75em;
 	}
 	
 	div.container.sign_up { }
 	
 	.sign-up {
-		width: 300px;
+		width: 350px;
+		margin-top: 0.75em;
 		margin-left: auto;
 		margin-right: auto;
-		text-align: center;
+		text-align: left;
+    
+    label {font-size: 1.2em;}
+    
+    .login_buttons { text-align: center; }
     
     p {
       font-size: 1em; // 18 % 18 
       line-height: 2em; // 18 % 18
 		}
+		
+		small { text-align: center;}
 
 	  label { text-align: left; font-weight: bold; }		
 
@@ -81,13 +99,13 @@ body.home {
 }
 
 footer.home {
-	background-color: #f2f2f2;
-  width: 100%;
+  position:absolute;
+  bottom:0;
+  width:100%;
   height: 200px;
-  clear: both;
-  padding-left: 20px;
-  padding-right: 20px;
-
+	background-color: #f2f2f2;
+	padding: 0.75em;
+ 
   h3 {
     font-size: 1em;
     color: #48b7e3;
@@ -98,5 +116,3 @@ footer.home {
   }
 
 }
-
-
