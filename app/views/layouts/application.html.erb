@@ -18,7 +18,7 @@
     <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
     <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
   </head>
-  <body>
+  <body id="index">
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -28,12 +28,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <%= link_to "Sumaresta", root_path, class: "brand" %>
+          <%= link_to "CASHfollower", root_path, class: "brand" %>
           <div class="container nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li><%= link_to "About", "/path1"  %></li>
+              <li><%= link_to "Help", "/path2"  %></li>
+              <li><%= link_to "Log out", "/path3"  %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -48,30 +48,37 @@
             <div class="span3">
             <div class="well sidebar-nav">
               <h3>Username</h3>
+
               <ul class="nav nav-list">
                 <li class="nav-header">Your Boards</li>
-                <li><%= link_to "+ New board", "/"  %></li>
                 <li><%= link_to "Link1", "/path1"  %></li>
                 <li><%= link_to "Link2", "/path2"  %></li>
                 <li><%= link_to "Link3", "/path3"  %></li>
               </ul>
+
             </div><!--/.well -->
           </div><!--/span-->
           
            <div class="span9">
              <%= content_for?(:header) ? yield(:header) : render(:partial => "layouts/shared/signed_in_header") %>
-             
+              <%= link_to "Dashboard", "/", class: "btn"  %>             
+              <%= link_to "+ New board", "/boards/new", class: "btn btn-primary"  %>
               <%= yield %>
             </div>
             
         </div><!--/row-->
       </div><!--/content-->
-
-      <footer>
-        <p>&copy; CASHfollower 2012</p>
-      </footer>
-
     </div> <!-- /container -->
+
+    <!-- Footer -->
+    <footer class="index">
+      <div class="container">
+        <div class="row-fluid">
+            <p>© 2012 cashfollower<br/>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Javascripts
     ================================================== -->

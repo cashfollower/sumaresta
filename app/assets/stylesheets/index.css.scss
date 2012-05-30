@@ -1,0 +1,19 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#index {
+  // padding-bottom:144px; 
+  min-height: 100%;
+  position: relative;
+}
+
+footer.index {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height: 36px;
+	background-color: #f2f2f2;
+	padding: 1.5em;
+  text-align: center;
+}

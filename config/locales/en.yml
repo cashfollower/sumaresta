@@ -20,4 +20,5 @@ en:
       title_3: "You will be runing in less than a minute."
   user:
     show:
-      select_board: "Select a board"
+      select_board: "Select your board"
+      index_board: "This is your dashboard page. Here you can view all your information about your boards."
